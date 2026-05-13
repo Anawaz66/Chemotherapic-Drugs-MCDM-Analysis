@@ -67,7 +67,7 @@ print("The number of edges in the graph is:", num_edges)
 #Visualize the graph
 pos = nx.kamada_kawai_layout(G)   # Position the nodes using a spring layout
 plt.figure(figsize=(12, 14))
-# plt.axis('off')
+plt.axis('off')
 nx.draw(G, pos, with_labels=True, node_size=110, width=1.5,  node_color='lightblue', font_size=11)
 plt.title("Custom Graph")
 plt.show()
@@ -299,9 +299,6 @@ print(rank_matrix)
 # print(type(rank_matrix1))
 # df = pd.DataFrame(rank_matrix1)
 # df.to_excel("rank_result.xlsx", index=False, header=False)
-
-
-# Daunorubicin, Dacarbazine, Bendamustine, Dactinomycin, Ifosfamide, Methotrexate, Doxorubicin, Capecitabine
 
 # Create the data
 data = {
